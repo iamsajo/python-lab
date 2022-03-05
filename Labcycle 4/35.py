@@ -3,12 +3,12 @@
 
 class Time:
     def __init__(self, hour, minute, second):
-        self._hour = hour
-        self._minute = minute
-        self._second = second
+        self.__hour = hour
+        self.__minute = minute
+        self.__second = second
         
     def __add__(self, other):
-        return 'time is: ' + str(self._hour + other._hour) + ':' + str(self._minute + other._minute) + ':' + str(self._second + other._second)
+        return 'time is: ' + str(self.__hour + other.__hour) + ':' + str(self.__minute + other.__minute) + ':' + str(self.__second + other.__second)
     
 
 h=int(input("enter the hour: "))
